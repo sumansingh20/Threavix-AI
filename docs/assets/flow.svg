@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-label="Threavix request flow from signal to response">
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05080e"/>
+      <stop offset="1" stop-color="#07121b"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#fbg)"/>
+
+  <rect x="420" y="24" width="360" height="72" rx="12" fill="#0b1c2b" stroke="#1e4f6b" stroke-width="1.5"/>
+  <text x="600" y="56" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" fill="#dbeafe" font-weight="600">Raw signal</text>
+  <text x="600" y="80" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" fill="#7f9bb3">alert, email, log, report</text>
+
+  <line x1="600" y1="96" x2="600" y2="148" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="5 6" marker-end="url(#arrow)">
+    <animate attributeName="stroke-dashoffset" from="22" to="0" dur="1.1s" repeatCount="indefinite"/>
+  </line>
+
+  <rect x="400" y="150" width="400" height="88" rx="12" fill="#0a2130" stroke="#2dd4bf" stroke-width="1.6"/>
+  <text x="600" y="186" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" fill="#5eead4" font-weight="600">Threavix agent</text>
+  <text x="600" y="212" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" fill="#7f9bb3">plans, calls tools, reasons</text>
+
+  <line x1="600" y1="238" x2="600" y2="292" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="5 6" marker-end="url(#arrow)">
+    <animate attributeName="stroke-dashoffset" from="22" to="0" dur="1.1s" repeatCount="indefinite"/>
+  </line>
+
+  <rect x="60" y="294" width="1080" height="182" rx="14" fill="#081826" stroke="#173f57" stroke-width="1.5"/>
+  <text x="86" y="326" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#93c5fd" font-weight="600" letter-spacing="1">THREAT INTELLIGENCE TOOLS</text>
+
+  <g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13.5" text-anchor="middle">
+    <g fill="#0c2436" stroke="#276b86" stroke-width="1.2">
+      <rect x="90" y="344" width="230" height="48" rx="9"/>
+      <rect x="340" y="344" width="230" height="48" rx="9"/>
+      <rect x="590" y="344" width="230" height="48" rx="9"/>
+      <rect x="840" y="344" width="230" height="48" rx="9"/>
+      <rect x="90" y="404" width="230" height="48" rx="9"/>
+      <rect x="340" y="404" width="230" height="48" rx="9"/>
+      <rect x="590" y="404" width="230" height="48" rx="9"/>
+      <rect x="840" y="404" width="230" height="48" rx="9"/>
+    </g>
+    <g fill="#cfe9f5">
+      <text x="205" y="374">ioc_extractor</text>
+      <text x="455" y="374">ip_intel</text>
+      <text x="705" y="374">dns_intel</text>
+      <text x="955" y="374">cve_lookup</text>
+      <text x="205" y="434">mitre_attack</text>
+      <text x="455" y="434">ir_playbook</text>
+      <text x="705" y="434">virustotal</text>
+      <text x="955" y="434">web_search</text>
+    </g>
+  </g>
+
+  <line x1="600" y1="476" x2="600" y2="512" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="5 6" marker-end="url(#arrow)">
+    <animate attributeName="stroke-dashoffset" from="22" to="0" dur="1.1s" repeatCount="indefinite"/>
+  </line>
+
+  <rect x="360" y="514" width="480" height="66" rx="12" fill="#0a2130" stroke="#a5b4fc" stroke-width="1.6"/>
+  <text x="600" y="544" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" fill="#c7d2fe" font-weight="600">Findings, severity and response playbook</text>
+  <text x="600" y="566" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12.5" fill="#7f9bb3">mapped to MITRE ATT&amp;CK and NIST phases</text>
+</svg>
